@@ -1,24 +1,45 @@
-# README
+## アプリケーション名
+ chat-3dprint
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション概要
+ 3Dプリンタで作成した作品を投稿し、交流する。コメント機能で、評価や3Dモデル作成機能などの技術発信をすることで、製作意欲の刺激、技術向上を図る。
 
-Things you may want to cover:
+## URL
+ 追記予定
 
-* Ruby version
+## テスト用アカウント
+ 追記予定
 
-* System dependencies
+## 利用方法
+### 作品投稿
+ 1.トップページ(一覧ページ)のヘッダーからユーザー新規登録を行う。
+ 2.新規投稿ボタンから作品の内容(作品名、作品説明、画像、3Dモデル)を入力し、投稿する。
+### コメント
+ 1.一覧ページに表示されている作品の画像から、詳細ページに遷移する。
+ 2.感想を述べたり、質問をする。
 
-* Configuration
+## アプリケーションを作成した背景
+FaceBookにて、3Dプリンタ作品を投稿し、コメントし合うグループは既にある。しかし3Dビューの機能はない(画面上で3Dデータを360度閲覧、拡大縮小させる機能)。3Dプリンタを扱うものにとって、3Dビューは必須の機能である。よって、3Dビュー機能を実装したチャットアプリを作成するに至った。
 
-* Database creation
+## 洗い出した要件
+https://docs.google.com/spreadsheets/d/1MPP1f85oPne2OQ_jagoqOCFubKLM84nPiNviaubQATU/edit#gid=416066170
 
-* Database initialization
+## 実装した機能についての画像やGIFおよびその説明
+ 追記予定
 
-* How to run the test suite
+## データベース設計
+[![Image from Gyazo](https://i.gyazo.com/c9cec7ce8afe3bab0bbd5374e0d24b0d.png)](https://gyazo.com/c9cec7ce8afe3bab0bbd5374e0d24b0d)
 
-* Services (job queues, cache servers, search engines, etc.)
+## 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/317515762537abbdf6837057d80b2393.png)](https://gyazo.com/317515762537abbdf6837057d80b2393)
 
-* Deployment instructions
+## 開発環境
+- ruby
+- html
+- css
 
-* ...
+## ローカルでの動作方法
+ 追記予定
+
+## 工夫したポイント
+ 追記予定
