@@ -7,8 +7,7 @@ RSpec.describe User, type: :model do
 
   describe 'ユーザー新規登録' do
     context '新規登録できるとき' do
-      it 'nickname、email、password、password_confirmation、
-          profileが存在すれば登録できる' do
+      it 'nickname、email、password、password_confirmation、profileが存在すれば登録できる' do
         expect(@user).to be_valid
       end
     end
@@ -68,7 +67,7 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
       end
-      it 'プロフィールが空では登録できない' do
+      it 'profileが空では登録できない' do
         @user.profile = ''
         @user.valid?
         expect(@user.errors.full_messages).to include("Profile can't be blank")
