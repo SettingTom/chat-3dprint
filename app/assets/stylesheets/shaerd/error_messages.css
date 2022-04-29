@@ -8,3 +8,7 @@
   list-style: circle;
   color: rgb(182, 48, 0);
 }
+
+.login-flash-message {
+  color: red;
+}
