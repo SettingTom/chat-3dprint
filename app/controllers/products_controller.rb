@@ -2,6 +2,10 @@ class ProductsController < ApplicationController
   def index
   end
 
+  def new
+    @product = Product.new
+  end
+
   private
 
   def product_params
