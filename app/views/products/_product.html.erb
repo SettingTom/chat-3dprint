@@ -1,0 +1,10 @@
+<div class="card">
+  <%= link_to image_tag(product.image.variant(resize: '200x200'), class: :card__img ), products_path(product.id), method: :get%>
+  <div class="card__body">
+    <%= link_to product.name, products_path(product.id), method: :get, class: :card__title%>
+    <p class="card__summary">
+      <%= product.text %>
+    </p>
+    <%= link_to product.user.nickname, class: :card__user %>
+  </div>
+</div>
