@@ -10,5 +10,5 @@ class User < ApplicationRecord
   validates :profile, presence: true
 
   has_many :products
-  has_many :comments
+  has_many :comments, dependent: :destroy
 end
