@@ -14,6 +14,11 @@
     <%= f.file_field :image, id:"prototype_image" %>
   </div>
 
+  <div class="field">
+    <%= f.label :three_data, "作品の3Dデータ" %><br />
+    <%= f.file_field :three_data, id:"prototype_image" %>
+  </div>
+
   <div class="actions">
     <%= f.submit "保存する", class: :form__btn  %>
   </div>
