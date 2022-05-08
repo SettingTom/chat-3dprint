@@ -14,6 +14,11 @@
       <div class="prototype__image">
         <%= image_tag @product.image.variant(resize: '200x200') %>
       </div>
+
+      <div class="prototype__image">
+        <%= @product.three_data %>
+      </div>
+      
       <div class="prototype__body">
         <div class="prototype__detail">
           <p class="detail__title">作品の説明</p>
