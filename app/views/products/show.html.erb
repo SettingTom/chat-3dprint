@@ -15,7 +15,7 @@
         <%= image_tag @product.image.variant(resize: '200x200') %>
       </div>
       
-      <%= <a-scene>
+      <%# <%= <a-scene>
         <a-assets>
           <a-asset-item id="crate-obj" src="#{@product.three_data_obj}"></a-asset-item>
           <a-asset-item id="crate-mtl" src="#{@product.three_data_mtl}"></a-asset-item>
@@ -27,10 +27,19 @@
         <div class="prototype__detail">
           <p class="detail__title">作品の説明</p>
           <p class="detail__message">
-            <%=link_to "リンク", @product.text, target: :_blank %>
+            <%= @product.text %>
           </p>
         </div>
       </div>
+
+      <div class="prototype__body">
+        <div class="prototype__detail">
+          <p class="detail__message">
+            <%=link_to "作品の3Dデータのリンク", @product.three_data_link, target: :_blank %>
+          </p>
+        </div>
+      </div>
+
       <div class="prototype__comments">
         <% if user_signed_in? %>
           <%= form_with model: [@product, @comment],local: true do |f|%>
