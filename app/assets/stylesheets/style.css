@@ -3,7 +3,7 @@
 .header {
   background-color: #f1f8fe;
   margin-bottom: 48px;
-  padding: 20px 0;
+  padding: 10px 0 5px 0;
 
 }
 .inner {
@@ -16,13 +16,13 @@
   justify-content: space-between;
 }
 .logo {
-  width: 200px;
+  width: 180px;
 }
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87CEFA;
+  color: #87cefa;
   text-decoration: none;
   user-select: none;
   border: 1px #87CEFA solid;
@@ -44,6 +44,10 @@
 }
 .nav__logout:hover{
   opacity: 0.5;
+}
+
+.nav__right{
+  padding-top: 10px;
 }
 
 /* フォーム周り */
