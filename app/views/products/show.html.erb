@@ -31,7 +31,7 @@
           </p>
         </div>
       </div>
-
+      <% if @product.three_data_link.present? %>
       <div class="prototype__body">
         <div class="prototype__detail">
           <p class="detail__message">
@@ -39,7 +39,7 @@
           </p>
         </div>
       </div>
-
+      <% end %>
       <div class="prototype__comments">
         <% if user_signed_in? %>
           <%= form_with model: [@product, @comment],local: true do |f|%>
