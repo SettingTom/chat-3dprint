@@ -1,5 +1,7 @@
 <div class="card">
-  <%= link_to image_tag(product.image.variant(resize: '200x200'), class: :card__img ), product_path(product.id), method: :get%>
+<% product.images.each do |image| %>
+  <%= link_to image_tag(image.variant(resize: '200x200'), class: :card__img ), product_path(product.id), method: :get%>
+ <% end %>
   <div class="card__body">
     <%= link_to product.name, product_path(product.id), method: :get, class: :card__title%>
     <%= link_to product.user.nickname, user_path(product.user.id), class: :card__user %>
