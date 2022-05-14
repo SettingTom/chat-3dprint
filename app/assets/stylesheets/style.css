@@ -106,7 +106,7 @@
   min-height: calc(100vh - 161px);
 }
 .card {
-  width: calc((100% - 50px) / 3);
+  width: 200px;
   margin-bottom: 40px;
 }
 .card__img {
@@ -146,9 +146,10 @@
   text-decoration: underline;
 }
 .prototype__image{
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
   padding: 16px 0;
+  text-align: center;
 }
 .prototype__detail{
   display: flex;
