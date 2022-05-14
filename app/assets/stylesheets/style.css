@@ -106,7 +106,7 @@
   min-height: calc(100vh - 161px);
 }
 .card {
-  width: calc((100% - 50px) / 3);
+  width: 200px;
   margin-bottom: 40px;
 }
 .card__img {
