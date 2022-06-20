@@ -47,6 +47,15 @@
       </div>
       <% end %>
       
+      <div class="prototype__body">
+        <div class="prototype__detail">
+          <p class="detail__title">作品の3Dデータ</p>
+          <p class="detail__message">
+           <%= @product.three_data %>
+          </p>
+        </div>
+      </div>
+      
       <div class="prototype__comments">
         <% if user_signed_in? %>
           <%= form_with model: [@product, @comment],local: true do |f|%>

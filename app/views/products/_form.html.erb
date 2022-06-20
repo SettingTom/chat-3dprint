@@ -19,15 +19,10 @@
     <%= f.text_area :three_data_link, class: :form__text, id:"prototype_catch_copy" %>
   </div>
 
-  <%# <div class="field"> %>
-    <%# <%= f.label :three_data_obj, "作品の3Dデータ(.obj)"<br /> %>
-    <%# <%= f.file_field :three_data_obj, id:"prototype_image" %>
-  <%# </div> %>
-
-  <%# <div class="field"> %>
-    <%# <%= f.label :three_data_mtl, "作品の3Dデータ(.mtl)"<br /> %>
-    <%# <%= f.file_field :three_data_mtl, id:"prototype_image" %>
-  <%# </div> %>
+  <div class="field">
+    <%= f.label :three_data, "作品の3Dデータ" %><br />
+    <%= f.file_field :three_data, id:"prototype_three_data" %>
+  </div>
 
   <div class="actions">
     <%= f.submit "保存する", class: :form__btn  %>
