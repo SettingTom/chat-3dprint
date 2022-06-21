@@ -14,12 +14,14 @@
         </div>
       <% end %>
 
-      <div class="prototype__image">
+      <div class="prototype__image" id="abc">
       <% @product.images.each do |image| %>
+        <a href="<%= url_for(image) %>" data-lightbox="zoom">
         <%= image_tag image.variant(resize: '200x200') %>
+        </a>
       <% end %>
       </div>
-      
+
       <%# <%= <a-scene>
         <a-assets>
           <a-asset-item id="crate-obj" src="#{@product.three_data_obj}"></a-asset-item>
