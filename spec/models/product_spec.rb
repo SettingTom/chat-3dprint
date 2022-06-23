@@ -24,9 +24,9 @@ RSpec.describe Product, type: :model do
         expect(@product.errors.full_messages).to include("Text can't be blank")
       end
       it 'imageが空では登録できない' do
-        @product.image = nil
+        @product.images = nil
         @product.valid?
-        expect(@product.errors.full_messages).to include("Image can't be blank")
+        expect(@product.errors.full_messages).to include("Images can't be blank")
       end
       it 'userが紐づいていなければ登録できない' do
         @product.user = nil
