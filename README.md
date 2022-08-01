@@ -40,7 +40,16 @@ Facebookにて、3Dプリンタ作品を投稿し、コメントし合うグル�
 )
 
 ## 実装した機能についての画像やGIFおよびその説明
- 追記予定
+ 主な機能は、ユーザー登録機能、作品投稿機能、コメント機能である。
+
+ トップページに投稿された作品の名前と1枚の写真が表示されている。
+ それをクリックすると、詳細ページに遷移する。
+ 詳細ページでは全ての写真と作品の説明、コメントが合わせて表示される。
+
+ [![Image from Gyazo](https://i.gyazo.com/485b833670d69d69c0b3d938a270f603.png)](https://gyazo.com/485b833670d69d69c0b3d938a270f603)
+
+ [![Image from Gyazo](https://i.gyazo.com/4c657dbb783c96ebb6f8531212ec3872.gif)](https://gyazo.com/4c657dbb783c96ebb6f8531212ec3872)
+
 
 ## データベース設計
 [![Image from Gyazo](https://i.gyazo.com/c9cec7ce8afe3bab0bbd5374e0d24b0d.png)](https://gyazo.com/c9cec7ce8afe3bab0bbd5374e0d24b0d)
